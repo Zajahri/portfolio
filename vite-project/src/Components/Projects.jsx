@@ -11,7 +11,7 @@ export const Projects = () => {
 
   let content = selectedProject && (
     <div className=" flex flex-col items-center h-[80vh]  ">
-      <p className="py-5 text-xl md:text-2xl text-slate-900 font-bold">{PROJECTS[selectedProject].projectName}</p>
+      <p className="py-5 text-xl md:text-2xl text-slate-200 font-bold">{PROJECTS[selectedProject].projectName}</p>
       <img
         className="md:h-96 md:w-[34rem] xl:h-[25rem] xl:w-[40rem] w-[70%] h-64 shadow-lg "
         src={PROJECTS[selectedProject].img}
@@ -19,8 +19,8 @@ export const Projects = () => {
       />
       <div className="flex items-center gap-3 text-center px-5">
         <div className="flex flex-col gap-2">
-          <p className=" text-slate-800 mt-5">{PROJECTS[selectedProject].description}</p>
-          <p className=" text-slate-800"><span className=" font-bold">Tech stack: </span> {PROJECTS[selectedProject].tech}</p>
+          <p className=" text-slate-200 mt-5">{PROJECTS[selectedProject].description}</p>
+          <p className=" text-slate-200"><span className=" font-bold">Tech stack: </span> {PROJECTS[selectedProject].tech}</p>
         </div>
       </div>
     </div>

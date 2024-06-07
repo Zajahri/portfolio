@@ -13,19 +13,19 @@ const PROJ = {
     project2: {
       img: proj2,
       projectName: "CRUD",
-      description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut perferendis, iure expedita vitae cumque magni?",
+      description: "A simple CRUD application that allows users to read, update, and delete data. ",
       tech: "HTML, Tailwind, React"
     },
     project3: {
       img: proj3,
       projectName: "Facebook clone",
-      description: "Lorem ipsum dolor sit amet.  consectetur adipisicing elit. Suscipit",
+      description: "A Facebook clone designed to emulate the UI of the popular social media platform. ",
       tech: "HTML, Tailwind, React"
     },
     project4: {
       img: proj4,
       projectName: "Investment Calculator",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ducimus tempore accusantium. Voluptatibus",
+      description: "An investment calculator is a tool that helps individuals estimate the potential growth of their investments over time.",
       tech: "HTML, CSS, React"
     },
     
