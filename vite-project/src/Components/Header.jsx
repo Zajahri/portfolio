@@ -9,7 +9,7 @@ export const Header = () => {
   return (
     <>
       <header className="bg-slate-800 h-16 flex px-10 justify-between items-center  text-white  z-50">
-        <p className="hover:cursor-pointer hover:opacity-70 text-xs md:text-base">
+        <p className="hover:cursor-pointer hover:opacity-70 text-xs md:text-base select-none">
           Zajahri Solar
         </p>
         <ul className="hidden md:flex items-center  ">
@@ -18,7 +18,7 @@ export const Header = () => {
               to="project"
               smooth={true}
               duration={500}
-              className="hover:outline-slate-600 hover:outline hover:cursor-pointer text-slate-300 hover:text-white  p-2  m-2"
+              className="select-none hover:outline-slate-600 hover:outline hover:cursor-pointer text-slate-300 hover:text-white  p-2  m-2"
             >
               Projects
             </Link>
@@ -28,7 +28,7 @@ export const Header = () => {
               to="about"
               smooth={true}
               duration={500}
-              className="hover:outline-slate-600 hover:outline hover:cursor-pointer   text-slate-300 hover:text-white  p-2   m-2"
+              className="select-none hover:outline-slate-600 hover:outline hover:cursor-pointer   text-slate-300 hover:text-white  p-2   m-2"
             >
               About
             </Link>
@@ -38,7 +38,7 @@ export const Header = () => {
               to="contact"
               smooth={true}
               duration={500}
-              className="hover:outline-slate-600 hover:outline hover:cursor-pointer   text-slate-300 hover:text-white  p-2   m-2"
+              className="select-none hover:outline-slate-600 hover:outline hover:cursor-pointer   text-slate-300 hover:text-white  p-2   m-2"
             >
               Contact
             </Link>

@@ -34,19 +34,19 @@ export const Home = () => {
         <div className=" flex-col items-center flex md:items-center md:justify-center md:flex-row md:gap-8 pt-16">
           <div className="z-10">
             <img
-              className="rounded-full bg-cover lg:h-96 lg:w-96 md:h-80 md:w-80 h-40 w-40"
+              className="select-none rounded-full bg-cover lg:h-96 lg:w-96 md:h-80 md:w-80 h-40 w-40"
               src={profile}
               alt=""
             />
           </div>
           <div className="text-center">
-            <p className=" text-yellow-400 text-3xl font-bold leading-7 mt-5 md:text-4xl lg:text-5xl tracking-wider">
+            <p className=" select-none text-yellow-400 text-3xl font-bold leading-7 mt-5 md:text-4xl lg:text-5xl tracking-wider">
               Zajahri F. Solar
             </p>
-            <p className="text-white font-light mb-4 md:text-base lg:text-lg text-sm">
+            <p className="select-none text-white font-light mb-4 md:text-base lg:text-lg text-sm">
               Front-end Web Developer
             </p>
-            <p className="text-white w-96 px-5 md:px-0 md:text-base lg:text-lg tracking-wider">
+            <p className="select-none text-white w-96 px-5 md:px-0 md:text-base lg:text-lg tracking-wider">
               Aspiring front-end web developer with a passion for turning ideas
               into interactive, user-friendly web experiences. Skilled in HTML,
               CSS, and JavaScript, and continually exploring the latest

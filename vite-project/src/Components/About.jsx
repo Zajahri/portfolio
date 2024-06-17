@@ -16,7 +16,7 @@ export const About = () => {
           <p className="text-center text-slate-200 md:text-3xl text-xl md:mb-5 mb-2">
             About me
           </p>
-          <p className=" text-slate-200 text-center mx-5 ">
+          <p className=" text-slate-200 text-center mx-5 select-none ">
             Hello, my name is Zajahri, and I am currently a 4th Year College at
             PSU-BC. I have developed a strong passion for coding and Web
             development, dedicating countless hours to honing my skills in
