@@ -1,7 +1,25 @@
 import profile from ".././assets/pic_pfolio.jpg";
 import { FaFacebookF, FaTiktok, FaGithub, FaReact } from "react-icons/fa6";
 import { Header } from "./Header";
+import DownloadCV from "./DownloadCV";
 export const Home = () => {
+  const tiktokUrl = "https://www.tiktok.com/@zaj.dev";
+  const facebookUrl = "https://www.facebook.com/zajahri/";
+  const githubUrl = "https://github.com/Zajahri";
+  const fileName = "CV_ZajahriSolar.pdf";
+
+  const handleTiktokClick = () => {
+    window.location.href = tiktokUrl;
+  };
+
+  const handleFacebookClick = () => {
+    window.location.href = facebookUrl;
+  };
+
+  const handleGithubClick = () => {
+    window.location.href = githubUrl;
+  };
+
   return (
     <div className="h-auto">
       <div className="bg-slate-800 h-screen  w-full  md:px-5   md:pt-0 md:pb-24 relative z-10 ">
@@ -32,30 +50,34 @@ export const Home = () => {
               Aspiring front-end web developer with a passion for turning ideas
               into interactive, user-friendly web experiences. Skilled in HTML,
               CSS, and JavaScript, and continually exploring the latest
-              frameworks like React and Next JS. Dedicated to creating responsive
-              designs that look stunning on any device.
+              frameworks like React and Next JS. Dedicated to creating
+              responsive designs that look stunning on any device.
             </p>
             <div className="flex justify-center items-center gap-10 mt-10 ">
-              <button className=" md:hidden md:h-10 lg:h-12  hover:text-yellow-300 hover:border-yellow-300 h-12 w-48 border-yellow-400 border-2 px-2 hover:bg-slate-900 text-yellow-400">
-                Download my CV
-              </button>
-
-              <div className="flex justify-end gap-3 md:mb-0    md:mt-10 md:mr-0 md:justify-center     ">
-                <div className="hover:cursor-pointer hover:opacity-70 bg-blue-600 h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 rounded-full flex justify-center items-center text-white">
+              <div className="flex  gap-3 md:mb-0  items-center    md:mt-10 md:mr-0 justify-center ">
+                <div
+                  onClick={handleFacebookClick}
+                  className=" z-50 hover:cursor-pointer hover:opacity-70 bg-blue-600 h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 rounded-full flex justify-center items-center text-white"
+                >
                   {<FaFacebookF className="text-lg md:text-lg lg:text-xl" />}
                 </div>
-                <div className="hover:cursor-pointer hover:opacity-70 bg-black h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 rounded-full flex justify-center items-center text-white">
+                <div
+                  onClick={handleTiktokClick}
+                  className=" z-50 hover:cursor-pointer hover:opacity-70 bg-black h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 rounded-full flex justify-center items-center text-white"
+                >
                   {<FaTiktok className="text-sm md:text-lg lg:text-xl" />}
                 </div>
-                <div className=" hover:cursor-pointer hover:opacity-70 bg-black h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 rounded-full flex justify-center items-center text-white">
+                <div
+                  onClick={handleGithubClick}
+                  className=" z-50 hover:cursor-pointer hover:opacity-70 bg-black h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 rounded-full flex justify-center items-center text-white"
+                >
                   {<FaGithub className="text-sm md:text-lg lg:text-xl" />}
                 </div>
-                <button className="hidden hover:cursor-pointer md:block md:h-10 lg:h-12 hover:text-yellow-300 hover:border-yellow-300 h-12 w-48 border-yellow-400 border-2 px-2 hover:bg-slate-900 text-yellow-400">
-                  Download my CV
-                </button>
+                <div className="   z-50">
+                  <DownloadCV fileName={fileName}   />
+                </div>
+              </div>
             </div>
-            </div>
-           
           </div>
         </div>
       </div>

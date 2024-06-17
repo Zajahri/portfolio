@@ -35,7 +35,7 @@ export const Projects = () => {
               onClick={() => clickHandler("project1")}
               className={`${
                 selectedProject === "project1" && "bg-slate-600"
-              } border-black border-[1px] md:border-2 p-2 hover:cursor-pointer`}
+              } border-slate-300 border-[1px] md:border-2 p-2 hover:cursor-pointer text-slate-300`}
             >
               <p className="text-xs md:text-lg ">Project 1</p>
             </button>
@@ -43,7 +43,7 @@ export const Projects = () => {
               onClick={() => clickHandler("project2")}
               className={`${
                 selectedProject === "project2" && "bg-slate-600"
-              } border-black border-[1px] md:border-2 p-2 hover:cursor-pointer`}
+              } border-slate-300 border-[1px] md:border-2 p-2 hover:cursor-pointer text-slate-300`}
             >
               <p className="text-xs md:text-lg ">Project 2</p>
             </button>
@@ -51,7 +51,7 @@ export const Projects = () => {
               onClick={() => clickHandler("project3")}
               className={`${
                 selectedProject === "project3" && "bg-slate-600"
-              } border-black border-[1px] md:border-2 p-2 hover:cursor-pointer`}
+              } border-slate-300 border-[1px] md:border-2 p-2 hover:cursor-pointer text-slate-300`}
             >
               <p className="text-xs md:text-lg ">Project 3</p>
             </button>
@@ -59,7 +59,7 @@ export const Projects = () => {
               onClick={() => clickHandler("project4")}
               className={`${
                 selectedProject === "project4" && "bg-slate-600"
-              } border-black border-[1px] md:border-2 p-2 hover:cursor-pointer`}
+              } border-slate-300 border-[1px] md:border-2 p-2 hover:cursor-pointer text-slate-300`}
             >
               <p className="text-xs md:text-lg ">Project 4</p>
             </button>
