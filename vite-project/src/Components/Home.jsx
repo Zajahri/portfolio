@@ -49,9 +49,7 @@ export const Home = () => {
             <p className="select-none text-white w-96 px-5 md:px-0 md:text-base lg:text-lg tracking-wider">
               Aspiring front-end web developer with a passion for turning ideas
               into interactive, user-friendly web experiences. Skilled in HTML,
-              CSS, and JavaScript, and continually exploring the latest
-              frameworks like React and Next JS. Dedicated to creating
-              responsive designs that look stunning on any device.
+              CSS, and JavaScript.
             </p>
             <div className="flex justify-center items-center gap-10 mt-10 ">
               <div className="flex  gap-3 md:mb-0  items-center    md:mt-10 md:mr-0 justify-center ">
