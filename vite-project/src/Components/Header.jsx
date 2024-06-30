@@ -8,11 +8,21 @@ export const Header = () => {
   document.body.style.overflow = openMenu ? "hidden" : "auto";
   return (
     <>
-      <header className="bg-slate-800 h-16 flex px-10 justify-between items-center  text-white  z-50">
+      <header className="bg-slate-800 shadow-lg h-16 flex px-10 justify-between items-center  text-white  z-50 sticky top-0">
         <p className="hover:cursor-pointer hover:opacity-70 text-xs md:text-base select-none">
           Zajahri Solar
         </p>
         <ul className="hidden md:flex items-center  ">
+        <li>
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              className="select-none hover:outline-slate-600 hover:outline hover:cursor-pointer   text-slate-300 hover:text-white  p-2   m-2"
+            >
+              About
+            </Link>
+          </li>
           <li>
             <Link
               to="project"
@@ -23,16 +33,7 @@ export const Header = () => {
               Projects
             </Link>
           </li>
-          <li>
-            <Link
-              to="about"
-              smooth={true}
-              duration={500}
-              className="select-none hover:outline-slate-600 hover:outline hover:cursor-pointer   text-slate-300 hover:text-white  p-2   m-2"
-            >
-              About
-            </Link>
-          </li>
+
           <li>
             <Link
               to="contact"
@@ -48,9 +49,11 @@ export const Header = () => {
           <button onClick={() => setOpenMenu((prev) => !prev)}>
             {<RxHamburgerMenu />}
           </button>
+          {openMenu && <HamburgerMenu className='left-0 right-0' close={() => setOpenMenu(false)} />}
         </div>
+       
       </header>
-      {openMenu && <HamburgerMenu close={() => setOpenMenu(false)} />}
+     
     </>
   );
 };

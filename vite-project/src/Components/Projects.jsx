@@ -27,9 +27,9 @@ export const Projects = () => {
   );
 
   return (
-    <div className="bg-slate-500 w-full min-h-screen pt-10" id="project">
+    <div className="bg-slate-800 w-full min-h-screen pt-20" id="project">
       <div className="md:grid md:grid-cols-5 h-screen ">
-        <div className=" md:col-span-1 md:flex md:justify-center items-center py-5 md:py-0">
+        <div className=" md:col-span-1 md:flex md:justify-center items-center pt-5 md:py-0">
           <div className="flex md:flex-col justify-center gap-5 md:gap-16  ">
             <button
               onClick={() => clickHandler("project1")}
@@ -66,7 +66,7 @@ export const Projects = () => {
           </div>
         </div>
         <div className=" md:col-span-4 flex flex-col  ">
-          <ul className=" w-full bg-slate-500 pt-10">{<li>{content}</li>}</ul>
+          <ul className=" w-full bg-slate-800 pt-10">{<li>{content}</li>}</ul>
         </div>
       </div>
     </div>

@@ -3,7 +3,15 @@ import { FaReact, FaHtml5, FaCss3, FaFigma } from "react-icons/fa";
 import { TbBrandTailwind, TbBrandJavascript  } from "react-icons/tb";
 export const About = () => {
   return (
-    <div className="bg-slate-800 w-auto h-[1100px] md:h-auto text-white">
+    <div className="bg-slate-800 w-auto h-[1100px] md:h-auto text-white relative">
+      <div className="absolute md:bottom-46 bottom-64 md:right-96 right-64 opacity-10 z-0 md:text-[15rem] text-[10rem]">
+          {" "}
+          <FaReact style={{ color: "black" }} />{" "}
+        </div>
+        <div className="absolute md:bottom-0 bottom-10 right-10 opacity-10 z-0 md:text-[10rem] text-[5rem]">
+          {" "}
+          <FaReact style={{ color: "black" }} />{" "}
+        </div>
       <div className=" md:grid md:grid-cols-5  " id="about">
         <div className=" md:col-span-2  w-full  md:h-full flex flex-col items-center">
           <img
@@ -12,10 +20,7 @@ export const About = () => {
             alt=""
           />
         </div>
-        <div className=" md:col-span-3 h-screen px-5 pt-5">
-          <p className="text-center text-slate-200 md:text-3xl text-xl md:mb-5 mb-2">
-            About me
-          </p>
+        <div className=" md:col-span-3 h-screen px-5 md:pt-24 pt-5">
           <p className=" text-slate-200 text-center mx-5 select-none ">
             Hello, my name is Zajahri, and I am currently a 4th Year College at
             PSU-BC. I have developed a strong passion for coding and Web

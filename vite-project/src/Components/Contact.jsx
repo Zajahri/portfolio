@@ -7,7 +7,7 @@ export const Contact = () => {
     alert('under maintenance')
   }
   return (
-    <div className="min-h-screen h-auto bg-slate-500 pt-10 " id="contact">
+    <div className="min-h-screen h-auto bg-slate-800 pt-10 " id="contact">
         <p className="py-5 md:py-10  text-center text-xl md:text-3xl text-white">Contact Me</p>
         <form action="#" className="w-full  ">
           <div className="flex flex-col items-center gap-4 text-black  ">
@@ -36,7 +36,7 @@ export const Contact = () => {
               <label className="block text-white" htmlFor="">Message</label>
             <textarea className='w-64 md:w-[33.25rem] md:h-[10rem] h-[5rem]  border border-black pl-2 border-none bg-slate-200' name="" id="" cols="30" rows="10"></textarea>
           </div>
-          <button onClick={clickHandler} className='mt-5 mb-5 md:mt-5 border-2 text-white border-black pl-2 w-64 md:w-[33.25rem] h-10 md:border-slate-800 hover:bg-slate-800 hover:text-white'>Send</button>
+          <button onClick={clickHandler} className='border-slate-300 border-[1px] md:border-2 p-2 px-5 hover:cursor-pointer hover:bg-slate-700 text-slate-300'>Send</button>
           </div>
 
          

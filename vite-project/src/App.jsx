@@ -9,8 +9,8 @@ function App() {
       <div className=" h-auto w-auto relative z-0">
         <Header />
         <Home />
-        <Projects />
         <About />
+        <Projects />
         <Contact />
       </div>
     </>
