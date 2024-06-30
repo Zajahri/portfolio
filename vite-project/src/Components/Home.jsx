@@ -6,7 +6,7 @@ export const Home = () => {
   const tiktokUrl = "https://www.tiktok.com/@zaj.dev";
   const facebookUrl = "https://www.facebook.com/zajahri/";
   const githubUrl = "https://github.com/Zajahri";
-  const fileName = "CV_ZajahriSolar.pdf";
+  const fileName = "Zajahri_resumee.docx";
 
   const handleTiktokClick = () => {
     window.location.href = tiktokUrl;
