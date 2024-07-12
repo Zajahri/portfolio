@@ -16,6 +16,7 @@ export const Projects = () => {
         className="md:h-96 md:w-[34rem] xl:h-[25rem] xl:w-[40rem] w-[70%] h-64 shadow-lg "
         src={PROJECTS[selectedProject].img}
         alt=""
+        loading="lazy"
       />
       <div className="flex items-center gap-3 text-center px-5">
         <div className="flex flex-col gap-2">
