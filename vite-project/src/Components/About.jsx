@@ -3,7 +3,7 @@ import { FaReact, FaHtml5, FaCss3, FaFigma } from "react-icons/fa";
 import { TbBrandTailwind, TbBrandJavascript  } from "react-icons/tb";
 export const About = () => {
   return (
-    <div className="bg-slate-800 w-auto h-[1100px] md:h-auto text-white relative">
+    <div className="bg-slate-800 font-roboto-mono w-auto h-[1100px] md:h-auto text-white relative">
       <div className="absolute md:bottom-46 bottom-64 md:right-96 right-64 opacity-10 z-0 md:text-[15rem] text-[10rem]">
           {" "}
           <FaReact style={{ color: "black" }} />{" "}
@@ -21,7 +21,7 @@ export const About = () => {
           />
         </div>
         <div className=" md:col-span-3 h-screen px-5 md:pt-24 pt-5">
-          <p className=" text-slate-200 text-center mx-5 select-none ">
+          <p className="  text-slate-200 text-center mx-5 select-none ">
             Hello, my name is Zajahri, and I am currently a 4th Year College at
             PSU-BC. I have developed a strong passion for coding and Web
             development, dedicating countless hours to honing my skills in

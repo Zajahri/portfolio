@@ -8,25 +8,29 @@ const PROJ = {
       img: proj1,
       projectName: "To-Do List App",
       description: "A straightforward to-do list application that allows users to add new tasks and remove them once completed ",
-      tech: "HTML, CSS, and React"
+      tech: "HTML, CSS, and React",
+      onWeb: false
     },
     project2: {
       img: proj2,
       projectName: "CRUD",
       description: "A simple CRUD application that allows users to read, update, and delete data. ",
-      tech: "HTML, Tailwind, React"
+      tech: "HTML, Tailwind, React",
+      onWeb: false
     },
     project3: {
       img: proj3,
       projectName: "Facebook clone",
       description: "A Facebook clone designed to emulate the UI of the popular social media platform. ",
-      tech: "HTML, Tailwind, React"
+      tech: "HTML, Tailwind, React",
+      onWeb: false
     },
     project4: {
       img: proj4,
       projectName: "Investment Calculator",
       description: "An investment calculator is a tool that helps individuals estimate the potential growth of their investments over time.",
-      tech: "HTML, CSS, React"
+      tech: "HTML, CSS, React",
+      onWeb: true
     },
     
 };

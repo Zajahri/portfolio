@@ -8,7 +8,7 @@ export const Header = () => {
   document.body.style.overflow = openMenu ? "hidden" : "auto";
   return (
     <>
-      <header className="bg-slate-800 shadow-lg h-16 flex px-10 justify-between items-center  text-white  z-50 sticky top-0">
+      <header className="bg-slate-800 font-['oswald'] shadow-lg h-16 flex px-10 justify-between items-center  text-white  z-50 sticky top-0">
         <p className="hover:cursor-pointer hover:opacity-70 text-xs md:text-base select-none">
           Zajahri Solar
         </p>

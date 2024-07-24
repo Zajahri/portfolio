@@ -6,7 +6,7 @@ import { About } from "./Components/About";
 function App() {
   return (
     <>
-      <div className=" h-auto w-auto relative z-0">
+      <div className=" h-auto w-auto relative z-0 bg-slate-800">
         <Header />
         <Home />
         <About />

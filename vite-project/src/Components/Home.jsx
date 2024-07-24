@@ -40,13 +40,13 @@ export const Home = () => {
             />
           </div>
           <div className="text-center">
-            <p className=" select-none text-yellow-400 text-3xl font-bold leading-7 mt-5 md:text-4xl lg:text-5xl tracking-wider">
+            <p className=" font-['oswald'] select-none text-yellow-400 text-3xl font-bold leading-7 mt-5 md:text-4xl lg:text-5xl tracking-widest">
               Zajahri F. Solar
             </p>
-            <p className="select-none text-white font-light mb-4 md:text-base lg:text-lg text-sm">
+            <p className=" font-['oswald'] select-none text-white font-light mb-4 md:text-base lg:text-lg text-sm">
               Front-end Web Developer
             </p>
-            <p className="select-none text-white w-96 px-5 md:px-0 md:text-base lg:text-lg tracking-wider">
+            <p className=" font-roboto-mono select-none text-white w-96 px-5 md:px-0 md:text-base lg:text-lg tracking-wider">
               Aspiring front-end web developer with a passion for turning ideas
               into interactive, user-friendly web experiences. Skilled in HTML,
               CSS, and JavaScript.
