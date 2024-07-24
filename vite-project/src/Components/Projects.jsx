@@ -4,7 +4,7 @@ import { FaCode } from "react-icons/fa";
 import { Project } from "./Project";
 export const Projects = () => {
   return (
-    <div className="pt-24" id="project">
+    <div className="pt-24 " id="project">
       <p className="text-white text-center font-['oswald'] text-2xl pb-3">
         My Recent Projects
       </p>
