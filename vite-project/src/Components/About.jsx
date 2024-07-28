@@ -21,7 +21,7 @@ export const About = () => {
             alt=""
           />
         </div>
-        <div className="md:h-auto col-span-2 px-5  pt-5 flex flex-col justify-center">
+        <div className="md:h-auto col-span-2 pt-5 flex flex-col justify-center">
           <p className="text-slate-200 text-center mx-5 select-none">
             Hello, my name is Zajahri, and I am currently a 4th Year College at
             PSU-BC. I have developed a strong passion for coding and Web
