@@ -13,22 +13,43 @@ export const Header = () => {
           Zajahri Solar
         </p>
         <ul className="hidden md:flex items-center  ">
-        <li>
+          <li>
             <Link
+              activeClass="font-bold"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            className="select-none hover:outline-slate-600 hover:outline hover:cursor-pointer text-slate-300 hover:text-white p-2 m-2 px-4"
+
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClass="font-bold"
               to="about"
+              spy={true}
+              offset={-70}
               smooth={true}
               duration={500}
-              className="select-none hover:outline-slate-600 hover:outline hover:cursor-pointer   text-slate-300 hover:text-white  p-2   m-2"
+ className="select-none hover:outline-slate-600 hover:outline hover:cursor-pointer text-slate-300 hover:text-white p-2 m-2 px-4"
             >
               About
             </Link>
           </li>
           <li>
             <Link
+              activeClass="font-bold"
               to="project"
+              offset={-70}
+              spy={true}
               smooth={true}
               duration={500}
-              className="select-none hover:outline-slate-600 hover:outline hover:cursor-pointer text-slate-300 hover:text-white  p-2  m-2"
+              className="select-none hover:outline-slate-600 hover:outline hover:cursor-pointer text-slate-300 hover:text-white p-2 m-2 w-24 text-center"
+
             >
               Projects
             </Link>
@@ -36,10 +57,14 @@ export const Header = () => {
 
           <li>
             <Link
+              activeClass="font-bold"
               to="contact"
+              spy={true}
+              offset={-70}
               smooth={true}
               duration={500}
-              className="select-none hover:outline-slate-600 hover:outline hover:cursor-pointer   text-slate-300 hover:text-white  p-2   m-2"
+              className="select-none hover:outline-slate-600 hover:outline hover:cursor-pointer text-slate-300 hover:text-white p-2 m-2 w-24 text-center"
+
             >
               Contact
             </Link>
@@ -49,11 +74,14 @@ export const Header = () => {
           <button onClick={() => setOpenMenu((prev) => !prev)}>
             {<RxHamburgerMenu />}
           </button>
-          {openMenu && <HamburgerMenu className='left-0 right-0' close={() => setOpenMenu(false)} />}
+          {openMenu && (
+            <HamburgerMenu
+              className="left-0 right-0"
+              close={() => setOpenMenu(false)}
+            />
+          )}
         </div>
-       
       </header>
-     
     </>
   );
 };

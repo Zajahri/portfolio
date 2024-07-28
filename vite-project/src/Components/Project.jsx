@@ -2,7 +2,7 @@ import { FaEye } from "react-icons/fa";
 // eslint-disable-next-line react/prop-types
 export const Project = ({ img, title, desc, onWeb }) => {
   return (
-    <div className="flex flex-col items-center mb-16 text-white relative">
+    <div className="flex flex-col items-center mb-24 text-white relative">
       <div className="w-full max-w-md shadow-lg px-4 md:px-0">
         <div className="bg-slate-700 flex flex-col items-center rounded-md h-full">
           <img
@@ -11,7 +11,7 @@ export const Project = ({ img, title, desc, onWeb }) => {
             alt={title}
           />
           <div className="px-4 py-5">
-            <p className="text-xl font-bold font-['Oswald'] tracking-wider text-yellow-400">
+            <p className="text-xl text-center font-bold font-['Oswald'] tracking-wider text-yellow-400">
               {title}
             </p>
             <p className="mt-2 text-sm font-['Roboto Mono']">{desc}</p>

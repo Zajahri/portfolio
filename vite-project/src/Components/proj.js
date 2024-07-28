@@ -30,7 +30,7 @@ const PROJ = {
       projectName: "Investment Calculator",
       description: "An investment calculator is a tool that helps individuals estimate the potential growth of their investments over time.",
       tech: "HTML, CSS, React",
-      onWeb: true
+      onWeb: false
     },
     
 };

@@ -1,5 +1,6 @@
-import profile from ".././assets/pic_pfolio.jpg";
+import profile from ".././assets/profilepicc.jpg";
 import { FaFacebookF, FaTiktok, FaGithub, FaReact } from "react-icons/fa6";
+import { Element } from "react-scroll";
 import { Header } from "./Header";
 import DownloadCV from "./DownloadCV";
 export const Home = () => {
@@ -21,8 +22,11 @@ export const Home = () => {
   };
 
   return (
-    <div className="h-auto">
-      <div className="bg-slate-800 h-screen  w-full  md:px-5   md:pt-0 md:pb-24 relative z-10 ">
+    <Element className="">
+      <div
+        className="bg-slate-800 h-screen w-full md:px-5 md:pt-10 md:pb-24 relative z-10"
+        id="home"
+      >
         <div className="absolute md:bottom-0 bottom-20 right-0 opacity-10 z-0 md:text-[35rem] text-[20rem]">
           {" "}
           <FaReact style={{ color: "black" }} />{" "}
@@ -34,7 +38,8 @@ export const Home = () => {
         <div className=" flex-col items-center flex md:items-center md:justify-center md:flex-row md:gap-8 pt-16">
           <div className="z-10">
             <img
-              className="select-none rounded-full bg-cover lg:h-96 lg:w-96 md:h-80 md:w-80 h-40 w-40"
+              className="select-none rounded-full object-cover lg:h-96 lg:w-96 md:h-80 md:w-80 h-40 w-40"
+              style={{ objectPosition: "top 20% left 50%" }}
               src={profile}
               alt=""
             />
@@ -72,13 +77,13 @@ export const Home = () => {
                   {<FaGithub className="text-sm md:text-lg lg:text-xl" />}
                 </div>
                 <div className="   z-50">
-                  <DownloadCV fileName={fileName}   />
+                  <DownloadCV fileName={fileName} />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </Element>
   );
 };
