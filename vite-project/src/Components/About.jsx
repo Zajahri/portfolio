@@ -13,7 +13,7 @@ export const About = () => {
         <FaReact style={{ color: "black" }} />{" "}
       </div>
       <div  className="text-center  pb-2  text-2xl font-['oswald'] text-yellow-400">About me</div>
-      <div className="md:grid grid-cols-3 items-center mx-10">
+      <div className="md:grid grid-cols-3 items-center mx-10 gap-3">
         <div className="w-full md:h-auto ">
           <img
             className="md:h-96 md:w-96 h-48 w-48 mx-auto  object-cover"

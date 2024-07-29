@@ -1,6 +1,10 @@
 import { FaEye } from "react-icons/fa";
 // eslint-disable-next-line react/prop-types
-export const Project = ({ img, title, desc, onWeb }) => {
+export const Project = ({ img, title, desc, onWeb, link }) => {
+  const handleLink = () => {
+    window.location.href = link;
+  };
+
   return (
     <div className="flex flex-col items-center mb-24 text-white relative">
       <div className="w-full max-w-md shadow-lg px-4 md:px-0">
@@ -17,7 +21,10 @@ export const Project = ({ img, title, desc, onWeb }) => {
             <p className="mt-2 text-sm font-['Roboto Mono']">{desc}</p>
           </div>
           <div className="flex gap-4 mb-5">
-            <button className="font-['Roboto Mono'] border-white border-2 py-2 px-4 hover:bg-slate-800">
+            <button
+              onClick={handleLink}
+              className="font-['Roboto Mono'] border-white border-2 py-2 px-4 hover:bg-slate-800"
+            >
               open on github
             </button>
             {onWeb && (
