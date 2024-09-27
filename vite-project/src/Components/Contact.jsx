@@ -7,7 +7,7 @@ export const Contact = () => {
     alert('under maintenance')
   }
   return (
-    <div className="min-h-screen h-auto bg-slate-800 font-['oswald'] " id="contact">
+    <div className="min-h-screen h-auto bg-slate-800 font-['oswald']   " id="contact">
         <p className="pb-3  text-center text-xl md:text-2xl  text-yellow-400">Contact Me</p>
         <form action="#" className="w-full  ">
           <div className="flex flex-col items-center gap-4 text-black  ">

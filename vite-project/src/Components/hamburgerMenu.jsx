@@ -41,7 +41,7 @@ export const HamburgerMenu = ({ close }) => {
             </Link>
           </li>
           <li className="text-xl py-5">
-            <Link
+            {/* <Link
               to="contact"
               smooth={true}
               duration={500}
@@ -49,7 +49,7 @@ export const HamburgerMenu = ({ close }) => {
               className="p-2 hover:bg-slate-600"
             >
               <button onClick={close}>Contact</button>
-            </Link>
+            </Link> */}
           </li>
         </ul>
         <button className="text-3xl absolute bottom-[120px]" onClick={close}>

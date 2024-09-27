@@ -56,7 +56,7 @@ export const Header = () => {
           </li>
 
           <li>
-            <Link
+            {/* <Link
               activeClass="font-bold"
               to="contact"
               spy={true}
@@ -67,7 +67,7 @@ export const Header = () => {
 
             >
               Contact
-            </Link>
+            </Link> */}
           </li>
         </ul>
         <div className="md:hidden">

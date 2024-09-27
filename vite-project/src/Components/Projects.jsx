@@ -8,7 +8,7 @@ export const Projects = () => {
       <p className=" text-center font-['oswald'] text-2xl pb-5 text-yellow-400">
         My Recent Projects
       </p>
-      <div className="lg:grid grid-cols-2">
+      <div className="lg:grid grid-cols-2 ">
         {Object.values(PROJECTS).map((project, index) => (
           <Project
             key={index}

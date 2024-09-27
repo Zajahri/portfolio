@@ -39,7 +39,7 @@ export const About = () => {
               </p>
               <div className="flex flex-col gap-5 text-center md:text-start">
                 <p>
-                  2020 - Present
+                  2020 - 2024
                   <span className="block italic">
                     Pangasinan State University - Bayambang Campus
                   </span>

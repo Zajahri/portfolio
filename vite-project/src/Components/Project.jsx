@@ -6,7 +6,7 @@ export const Project = ({ img, title, desc, onWeb, link }) => {
   };
 
   return (
-    <div className="flex flex-col items-center mb-24 text-white relative">
+    <div className="flex flex-col items-center pb-24 text-white relative  ">
       <div className="w-full max-w-md shadow-lg px-4 md:px-0">
         <div className="bg-slate-700 flex flex-col items-center rounded-md h-full">
           <img
