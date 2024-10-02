@@ -1,20 +1,24 @@
 import { FaEye } from "react-icons/fa";
 // eslint-disable-next-line react/prop-types
-export const Project = ({ img, title, desc, onWeb, link }) => {
+export const Project = ({ img, title, desc, onWeb, linkOnWeb, link }) => {
   const handleLink = () => {
     window.location.href = link;
   };
 
+  const handleLinkOnWeb = () => {
+    window.location.href = linkOnWeb
+  }
+
   return (
     <div className="flex flex-col items-center pb-24 text-white relative  ">
       <div className="w-full max-w-md shadow-lg px-4 md:px-0">
-        <div className="bg-slate-700 flex flex-col items-center rounded-md h-full">
+        <div className="bg-slate-700   flex flex-col items-center rounded-md h-full">
           <img
             className="w-full h-56 md:h-64 rounded-tl-md rounded-tr-md object-cover"
             src={img}
             alt={title}
           />
-          <div className="px-4 py-5">
+          <div className="px-4 py-5 min-h-28 max-h-max">
             <p className="text-xl text-center font-bold font-['Oswald'] tracking-wider text-yellow-400">
               {title}
             </p>
@@ -28,7 +32,7 @@ export const Project = ({ img, title, desc, onWeb, link }) => {
               open on github
             </button>
             {onWeb && (
-              <button className="text-2xl text-white hover:text-gray-400">
+              <button onClick={handleLinkOnWeb} className="text-2xl text-white hover:text-gray-400">
                 <FaEye />
               </button>
             )}

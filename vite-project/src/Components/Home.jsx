@@ -24,7 +24,7 @@ export const Home = () => {
   return (
     <Element className="">
       <div
-        className="bg-slate-800 h-screen w-full md:px-5 md:pt-10 md:pb-24 relative z-10"
+        className="bg-slate-800 h-auto w-full pb-24 md:px-5 md:pt-10 md:pb-24 relative z-10"
         id="home"
       >
         <div className="absolute md:bottom-0 bottom-20 right-0 opacity-10 z-0 md:text-[35rem] text-[20rem]">

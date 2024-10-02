@@ -17,6 +17,7 @@ export const Projects = () => {
             desc={project.description}
             tech={project.tech}
             onWeb={project.onWeb}
+            linkOnWeb={project.linkOnWeb}
             link={project.link}
           />
         ))}
