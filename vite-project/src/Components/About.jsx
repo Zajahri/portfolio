@@ -61,7 +61,7 @@ export const About = () => {
             <hr className="my-5 md:hidden" />
             <div>
               <p className="text-center text-slate-200 md:text-3xl text-xl md:my-5 mb-2 mt-5">
-                Soft Skills
+                Technical Skills
               </p>
               <div className="flex flex-col items-center mt-5 md:mt-6">
                 <div className="flex flex-col gap-4">
